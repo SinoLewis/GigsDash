@@ -22,6 +22,11 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './theme/tailwind.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
+// Tailwindcss
+// import "tailwindcss/tailwind.css"
 
 const app = createApp(App)
   .use(IonicVue)
