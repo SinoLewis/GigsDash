@@ -48,7 +48,7 @@
           </h6>
         </ion-list-header>
         <ion-menu-toggle auto-hide="false">
-          <router-link to="/">
+          <a href="/home">
             <ion-item button>
               <ion-icon
                 :icon="homeOutline"
@@ -59,8 +59,8 @@
                 <p class="uppercase p-3 font-bold hover:text-blue-600">Home</p>
               </ion-label>
             </ion-item>
-          </router-link>
-          <router-link to="/stats">
+          </a>
+          <a href="/stats">
             <ion-item button>
               <ion-icon
                 :icon="statsChartOutline"
@@ -71,8 +71,8 @@
                 <p class="uppercase p-3 font-bold hover:text-blue-600">Stats</p>
               </ion-label>
             </ion-item>
-          </router-link>
-          <router-link to="/settings">
+          </a>
+          <a href="/settings">
             <ion-item button>
               <ion-icon
                 :icon="settingsOutline"
@@ -85,28 +85,33 @@
                 </p>
               </ion-label>
             </ion-item>
-          </router-link>
-
-          <ion-item button>
-            <ion-icon
-              :icon="tabletLandscapeOutline"
-              size="large"
-              color="primary"
-            ></ion-icon>
-            <ion-label>
-              <p class="uppercase p-3 font-bold hover:text-blue-600">Tables</p>
-            </ion-label>
-          </ion-item>
-          <ion-item button>
-            <ion-icon
-              :icon="mapOutline"
-              size="large"
-              color="primary"
-            ></ion-icon>
-            <ion-label>
-              <p class="uppercase p-3 font-bold hover:text-blue-600">Maps</p>
-            </ion-label>
-          </ion-item>
+          </a>
+          <a href="/tables">
+            <ion-item button>
+              <ion-icon
+                :icon="tabletLandscapeOutline"
+                size="large"
+                color="primary"
+              ></ion-icon>
+              <ion-label>
+                <p class="uppercase p-3 font-bold hover:text-blue-600">
+                  Tables
+                </p>
+              </ion-label>
+            </ion-item>
+          </a>
+          <a href="/maps">
+            <ion-item button>
+              <ion-icon
+                :icon="mapOutline"
+                size="large"
+                color="primary"
+              ></ion-icon>
+              <ion-label>
+                <p class="uppercase p-3 font-bold hover:text-blue-600">Maps</p>
+              </ion-label>
+            </ion-item>
+          </a>
         </ion-menu-toggle>
       </ion-list>
     </ion-content>
@@ -151,7 +156,6 @@
     </ion-header>
     <ion-content class="ion-padding">
       <ion-router-outlet />
-      <p>Blind Dates</p>
     </ion-content>
     <ion-footer>
       <footer-admin />
@@ -162,6 +166,8 @@
 <script lang="ts">
 import {
   IonRouterOutlet,
+  // IonNavLink,
+  // IonTabButton,
   IonButtons,
   IonContent,
   IonHeader,
@@ -202,6 +208,8 @@ export default defineComponent({
   components: {
     FooterAdmin,
     IonRouterOutlet,
+    // IonNavLink
+    // IonTabButton,
     IonButtons,
     IonContent,
     IonHeader,

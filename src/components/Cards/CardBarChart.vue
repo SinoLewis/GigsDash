@@ -8,9 +8,7 @@
           <h6 class="uppercase text-blueGray-400 mb-1 text-xs font-semibold">
             Performance
           </h6>
-          <h2 class="text-blueGray-700 text-xl font-semibold">
-            Total orders
-          </h2>
+          <h2 class="text-blueGray-700 text-xl font-semibold">Total orders</h2>
         </div>
       </div>
     </div>
@@ -26,7 +24,7 @@ import Chart from "chart.js";
 export default {
   mounted: function () {
     this.$nextTick(function () {
-      let config = {
+      const config = {
         type: "bar",
         data: {
           labels: [
@@ -118,7 +116,7 @@ export default {
           },
         },
       };
-      let ctx = document.getElementById("bar-chart").getContext("2d");
+      const ctx = document.getElementById("bar-chart").getContext("2d");
       window.myBar = new Chart(ctx, config);
     });
   },

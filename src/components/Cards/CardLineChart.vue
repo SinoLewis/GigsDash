@@ -8,9 +8,7 @@
           <h6 class="uppercase text-blueGray-100 mb-1 text-xs font-semibold">
             Overview
           </h6>
-          <h2 class="text-white text-xl font-semibold">
-            Sales value
-          </h2>
+          <h2 class="text-white text-xl font-semibold">Sales value</h2>
         </div>
       </div>
     </div>
@@ -28,7 +26,7 @@ import Chart from "chart.js";
 export default {
   mounted: function () {
     this.$nextTick(function () {
-      var config = {
+      const config = {
         type: "line",
         data: {
           labels: [
@@ -128,7 +126,7 @@ export default {
           },
         },
       };
-      var ctx = document.getElementById("line-chart").getContext("2d");
+      const ctx = document.getElementById("line-chart").getContext("2d");
       window.myLine = new Chart(ctx, config);
     });
   },
