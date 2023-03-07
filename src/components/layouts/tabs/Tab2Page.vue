@@ -12,12 +12,12 @@
         </ion-toolbar>
       </ion-header>
 
-      <ExploreContainer name="Tab 2 page" />
+      <p>Nick Brewer - Talk To Me ft. Bibi Bourelly</p>
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+
 </script>
