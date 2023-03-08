@@ -4,17 +4,20 @@
 
 | NO. | Compo.   | JS & Stores & Utils                      | HTML | CSS |
 | --- | -------- | ---------------------------------------- | ---- | --- |
-| 1.  | Home     | - Main summary overview from other views |      |     |
+| 1.  | App      | - Switch views without refresh           |      |     |
+|     |          | - Init Supabase client                   |      |     |
 |     |          |                                          |      |     |
-| 2.  | Maps     | - Delivery tracking for multiple         |      |     |
+| 2.  | Home     | - Main summary overview from other views |      |     |
 |     |          |                                          |      |     |
-| 3.  | Settings | - Admin account profile                  |      |     |
+| 3.  | Maps     | - Delivery tracking for multiple         |      |     |
 |     |          |                                          |      |     |
-| 4.  | Stats    | - Async tables statics                   |      |     |
+| 4.  | Settings | - Admin account profile                  |      |     |
 |     |          |                                          |      |     |
-| 5.  | Tables   | - Fireshop database tables               |      |     |
+| 5.  | Stats    | - Async tables statics                   |      |     |
 |     |          |                                          |      |     |
-| 6.  | IRL      | - IRL mngt ie. Discord server stats      |      |     |
+| 6.  | Tables   | - Fireshop database tables               |      |     |
+|     |          |                                          |      |     |
+| 7.  | IRL      | - IRL mngt ie. Discord server stats      |      |     |
 |     |          |                                          |      |     |
 
 ## **2. Vue compos TODO**
