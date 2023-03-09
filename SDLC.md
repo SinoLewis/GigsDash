@@ -17,7 +17,8 @@
 |     |          |                                          |      |     |
 | 6.  | Tables   | - Fireshop database tables               |      |     |
 |     |          |                                          |      |     |
-| 7.  | IRL      | - IRL mngt ie. Discord server stats      |      |     |
+| 7.  | IRL      | - IRL mngt ie. SocialMedia API's stats   |      |     |
+|     |          | - Discord, Youtube, Twitter stats        |      |     |
 |     |          |                                          |      |     |
 
 ## **2. Vue compos TODO**
